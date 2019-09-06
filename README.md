@@ -33,3 +33,6 @@ Since this is not meant for people who can't figure out how to do things like th
 4. Hope it works
 
 5. Submit an issue because I forgot something
+
+## Dependencies
+Dy2O3 uses things from [PROS](https://github.com/purduesigbots/pros), [FreeRTOS](https://freertos.org), [OkapiLib](https://github.com/okapilib/okapilib), and [CTY](https://crates.io/crates/cty). I did  my best to attribute things properly to their authors, but if you have any concerns about this, please open an issue so we can sort this out without any legal action getting involved.
