@@ -1,0 +1,2 @@
+[target.armv7a-none-eabi]
+rustflags = ["-Clinker=arm-none-eabi-g++","-Car=arm-none-eabi-ar"]

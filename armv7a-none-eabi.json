@@ -1,0 +1,32 @@
+{
+  "arch": "arm",
+  "cpu": "cortex-a9",
+  "data-layout": "e-m:e-p:32:32-i1:8:32-i8:8:32-i16:16:32-i64:64-v128:64:128-a:0:32-n32-S64",
+  "disable-redzone": true,
+  "executables": true,
+  "llvm-target": "arm-unknown-eabi",
+  "linker": "arm-none-eabi-gcc",
+  "linker-flavor":"gcc",
+  "panic":"abort",
+  "morestack": false,
+  "os": "none",
+  "linker-is-gnu": true,
+  "has-rpath": true,
+  "relocation-model": "static",
+  "target-endian": "little",
+  "target-c-int-width":"32",
+  "target-pointer-width": "32",
+  "pre-link-args": {
+    "gcc":[
+      "-mcpu=cortex-a9",
+      "-mfpu=neon-fp16",
+      "-mfloat-abi=softfp",
+      "-nostdlib"
+    ]
+  },
+  "post-link-args": {
+    "gcc":[
+      "-Wl,-z,muldefs,-T,./firmware/v5.ld,--gc-sections,--start-group,./firmware/libpros.a,./firmware/okapilib.a,-lc,-lm,-lgcc,-lstdc++,-lsupc++,--end-group"
+    ]
+  }
+}

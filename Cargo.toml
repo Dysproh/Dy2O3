@@ -1,0 +1,19 @@
+[package]
+name = "Monolith"
+version = "0.1.0"
+authors = ["drew <drewbdeaton@gmail.com>"]
+
+[dependencies]
+cty = {git="https://github.com/japaric/cty.git"}
+
+[build]
+rustflags = ["-Awarnings", "-C", "target-feature=+crt-static"]
+
+[build-dependencies]
+bindgen = "0.51"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
