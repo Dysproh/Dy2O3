@@ -22,7 +22,9 @@ Since this is not meant for people who can't figure out how to do things like th
 
 6. Somehow obtain a project.pros file. This doesn't come with one as I have no idea how to generate one or if it is even needed, other than for uploading to the robot.
 
-7. Open an issue with the error you get because I definitely forgot something
+7. Get the [cty](https://crates.io/crates/cty) source code and put it in libraries/cty
+
+8. Open an issue with the error you get because I definitely forgot something
 
 ## Building
 1. Open a command line in your project's root directory
