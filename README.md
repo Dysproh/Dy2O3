@@ -20,7 +20,9 @@ Since this is not meant for people who can't figure out how to do things like th
 
 5. Clone this repository into the project directory
 
-6. Open an issue with the error you get because I definitely forgot something
+6. Somehow obtain a project.pros file. This doesn't come with one as I have no idea how to generate one or if it is even needed, other than for uploading to the robot.
+
+7. Open an issue with the error you get because I definitely forgot something
 
 ## Building
 1. Open a command line in your project's root directory
@@ -29,7 +31,7 @@ Since this is not meant for people who can't figure out how to do things like th
 
 3. Using the PROS toolbar, because I can't figure out the CLI, upload to the robot
 
-	* If it gives you an error, run the command `sudo chmod a+rw /dev/ttyACM#`, where `#` is the number next to your briain's communications port when you run `prosv5 lsusb`
+	* If it gives you an error, run the command `sudo chmod a+rw /dev/ttyACM#`, where `#` is the number next to your brain's communications port when you run `prosv5 lsusb`
 4. Hope it works
 
 5. Submit an issue because I forgot something
