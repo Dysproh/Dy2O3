@@ -26,7 +26,7 @@
   },
   "post-link-args": {
     "gcc":[
-      "-Wl,-z,muldefs,-T,./firmware/v5.ld,--gc-sections,--start-group,./firmware/libpros.a,./firmware/okapilib.a,-lc,-lm,-lgcc,-lstdc++,-lsupc++,--end-group"
+      "-Wl,-z,muldefs,-T,./firmware/v5.ld,--gc-sections,--start-group,./firmware/libpros.a,-lc,-lm,-lgcc,-lstdc++,-lsupc++,--end-group"
     ]
   }
 }

@@ -15,6 +15,8 @@ fn panic(info: &core::panic::PanicInfo) -> ! {
     loop {}
 }
 
+
+//Initialization code
 #[no_mangle]
 pub unsafe extern "C" fn initialize() {
     motor_set_gearing(1, motor_gearset_e_E_MOTOR_GEARSET_18);
@@ -23,6 +25,15 @@ pub unsafe extern "C" fn initialize() {
     lcd_initialize();
 }
 
+
+//Autonomous routine
+#[no_mangle]
+pub unsafe extern "C" fn autonomous() {
+
+}
+
+
+//Operator Control code
 #[no_mangle]
 pub unsafe extern "C" fn opcontrol() {
     loop {
