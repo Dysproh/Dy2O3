@@ -2,6 +2,8 @@
 ### Rust for VexV5
 ###### (aka notnotnotvcs)
 
+### This repository is an archive. It was definitely cool when it was created, but [better things exist these days.](https://gitlab.com/qvex/vex-rt)
+
 ## WARNING
 This template is really not a good way to program your Robot. Several PROS features do not work at the moment, such as threads, and the mangled mess that is the Bindgen C API bindings is really terrible to use. I mainly made this for educational purposes. If you do choose to use this for competition, I am not responsible for anything, including losing autonomous, the head ref getting mad about you using an unsopported language, or thermonuclear war.
 
